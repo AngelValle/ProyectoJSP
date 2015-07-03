@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -10,7 +10,8 @@
 	<h1>ADIVINA MI NUMERO</h1>
 	<% 
 	out.println("Su numero era: " + session.getAttribute("numeromedio")+"."+"<br>"+"Lo hemos conseguido en "+session.getAttribute("numerointentos")+" intentos.");
-	out.println("Suerte en la proxima   ;)");
+	out.println("Suerte en la proxima   ;) <br>");
 	%>
+	<jsp:include page="/ServletConexionesActivas"></jsp:include>
 </body>
 </html>
